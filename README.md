@@ -1,1 +1,1 @@
-# reporter-a-de-bases-de-datos
+# reporter-de-bases-de-datos
