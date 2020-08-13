@@ -46,9 +46,6 @@ create table PACIENTE (
    NUM_CEDULA         			  varchar(10)         null,
    NUM_HISTORIA_CLINICA         varchar(10)         null,
    TALLA					           varchar(10)			 null,
-   PARTOS						     varchar(10)			 null,
-   ALBORTOS					        varchar(10)			 null,
-   CESAREAS                     varchar(10)         null,
    EMAIL						        varchar(50)         null,
    
    constraint PK_PACIENTE primary key (IDPACIENTE)
@@ -76,8 +73,8 @@ create table PARTO (
    ID_DOCTOR            int		           null,
    FECHA_PARTO          date        	     null,
    TIPO_PARTO           varchar(50)         null,
-   PESO       	         int          	     not null,
-   TALLA		            int	              not null,
+   PESO       	        varchar(50)          	     not null,
+   TALLA		        varchar(50)	              not null,
    SEXO                 varchar(20)         null,
    NOMBRE     	         varchar(50)         null,
    constraint PK_PARTO primary key (IDPARTO,ID_PACIENTE)
